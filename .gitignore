@@ -1,0 +1,11 @@
+.env
+
+todo_memo.txt
+
+__pycache__/
+
+venv/
+
+.idea/
+
+*.py[cod]
