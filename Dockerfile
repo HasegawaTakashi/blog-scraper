@@ -1,6 +1,7 @@
 FROM python:3.10.2
 
 ENV PYTHONUNBUFFERED 1
+ENV PYTHONPATH=/app
 
 WORKDIR /app
 
@@ -12,4 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./app ./app
 
-CMD ["python", "scraper.py"]
+CMD ["python", "tests/test_db.py"]
+ENTRYPOINT ["python", "scraper.py"]
